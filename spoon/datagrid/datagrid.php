@@ -1250,7 +1250,7 @@ class SpoonDataGrid
 		if($this->paging)
 		{
 			// offset, order & sort
-			$this->tpl->assign(array('offset', 'order', 'sort'), array($this->getOffset(), $this->getOrder(), $this->getSort()));
+			$this->tpl->assign(array('offset' => $this->getOffset(), 'order' => $this->getOrder(), 'sort' => $this->getSort()));
 
 			// number of results
 			$this->tpl->assign('iResults', $this->source->getNumResults());
